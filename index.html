@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="card.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/3bb7c5630d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="manga.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="nav.js"></script>
+
+    <style>
+        
+        @media screen and (max-width: 695px) {
+            .menu a {
+
+                padding: 16px 19px;
+
+                margin: 0px -6px;
+            }
+        }
+
+        @media screen and (max-width: 442px) {
+            .col-item .price h4{
+                width: 16rem;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <header class="section-header">
+
+
+
+        <section class="header-main border-bottom bg-white">
+            <div class="container-fluid">
+                <div class="row p-2 pt-3 pb-3 d-flex align-items-center">
+                    <div class="col-md-2">
+                        <img class="d-none d-md-flex" src="logo-removebg-preview.png" width="100">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex form-inputs">
+                            <input class="form-control" type="text" placeholder="Search any product...">
+                            <i class="bx bx-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="d-flex d-none d-md-flex flex-row align-items-center">
+
+                            <div class="d-flex flex-column ms-2">
+                                <i class="fa-sharp fa-solid fa-cart-plus fa-2x"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </header>
+
+    <ul class="menu cleafix">
+        <li class="parent">
+            <a href="index.html">Home</a>
+
+        </li>
+        <li class="parent">
+            <a href="">Categories</a>
+            <ul class="children">
+                <li><a href="manga.html">Manga</a></li>
+                <li><a href="fiction.html">Frictional</a></li>
+                <li><a href="non-fiction.html">Non Frictional</a></li>
+                <li><a href="NCERT.HTML">NCERT</a></li>
+
+            </ul>
+        </li>
+        <li><a href="Trending.html">Trending</a></li>
+        <li><a href="new_arrivals.html">New Arrivals</a></li>
+        <li class="parent">
+            <a href="">Account</a>
+            <ul class="children">
+                <li><a href="login.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+
+
+            </ul>
+        </li>
+
+    </ul>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="Trending.html">Trending</a>
+        <a href="new_arrivals.html">New Arrivals</a>
+        <div class="dropdown">
+            <button class="dropbtn">Categories
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="manga.html">Manga</a>
+                <a href="fiction.html">Frictional</a>
+                <a href="non-fiction.html">Non-Frictional</a>
+                <a href="NCERT.HTML">NCERT</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Account
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="login.html">Sign Up</a>
+                <a href="login.html">Login</a>
+
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="container">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="manga.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="78_inr.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="book.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-9">
+                    <h3>Popular Manga</h3>
+                </div>
+                <div class="col-md-3">
+                    <!-- Controls -->
+                    <div class="controls pull-right ">
+                        <a class="left fa fa-chevron-left btn btn" href="#carousel-example" data-slide="prev"></a><a
+                            class="right fa fa-chevron-right btn" href="#carousel-example" data-slide="next"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="carousel-example" class="carousel slide " data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Tokyo Revengers</h4>
+                                                <h5 class="price-text-color">$7.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://preview.redd.it/eitrrhgkixy71.jpg?auto=webp&s=621bca2ba659087ebcb9f7a068f0c3ebc2708dfb"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Spy X Family </h4>
+                                                <h5 class="price-text-color">$9.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://m.media-amazon.com/images/I/71vMGRog+iL.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Blue Lock</h4>
+                                                <h5 class="price-text-color">$7.58</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://m.media-amazon.com/images/I/51KAiTOuptL.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Chainsaw Man</h4>
+                                                <h5 class="price-text-color">$3.75</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781974727117_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Jujutsu Kaisen</h4>
+                                                <h5 class="price-text-color">$7.17</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://m.media-amazon.com/images/I/81E0-lYPTGL._AC_UY327_FMwebp_QL65_.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Black Clover</h4>
+                                                <h5 class="price-text-color">$19.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://m.media-amazon.com/images/I/51pwyLvv6AL._AC_UY327_FMwebp_QL65_.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">One Piece</h4>
+                                                <h5 class="price-text-color">$1.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://m.media-amazon.com/images/I/912KWSgjNQL.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Demon Slayer</h4>
+                                                <h5 class="price-text-color">$1.09</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://m.media-amazon.com/images/I/81ZNkhqRvVL.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-9">
+                    <h3>Best Seller</h3>
+                </div>
+                <div class="col-md-3">
+                    <!-- Controls -->
+                    <div class="controls pull-right ">
+                        <a class="left fa fa-chevron-left btn btn" href="#carousel-example1" data-slide="prev"></a><a
+                            class="right fa fa-chevron-right btn" href="#carousel-example1" data-slide="next"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="carousel-example1" class="carousel slide " data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Ikigai</h4>
+                                                <h5 class="price-text-color">$7.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/895/9781786330895.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Twisted Love </h4>
+                                                <h5 class="price-text-color">$9.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/278/9781087939278.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Magic</h4>
+                                                <h5 class="price-text-color">$7.58</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/399/9781849838399.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Secret</h4>
+                                                <h5 class="price-text-color">$3.75</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/297/9781847370297.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">November 9</h4>
+                                                <h5 class="price-text-color">$7.17</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/344/9781501110344.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Ugly Love</h4>
+                                                <h5 class="price-text-color">$19.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/188/9781476753188.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Just Kids</h4>
+                                                <h5 class="price-text-color">$1.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/228/9780060936228.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Neuromancer
+                                                </h4>
+                                                <h5 class="price-text-color">$1.09</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/595/9780441569595.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-9">
+                    <h3>Newly Arrived</h3>
+                </div>
+                <div class="col-md-3">
+                    <!-- Controls -->
+                    <div class="controls pull-right ">
+                        <a class="left fa fa-chevron-left btn btn" href="#carousel-example2" data-slide="prev"></a><a
+                            class="right fa fa-chevron-right btn" href="#carousel-example2" data-slide="next"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="carousel-example2" class="carousel slide " data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Ret Samidhi</h4>
+                                                <h5 class="price-text-color">$7.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://cms.buybooksindia.com/uploads/books/9789387462250_0_1650885427.jpeg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Next In Line </h4>
+                                                <h5 class="price-text-color">$9.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://buybooksindia.s3.amazonaws.com/product/9780008523237-1666242224.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Do Epic Shit</h4>
+                                                <h5 class="price-text-color">$7.58</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://cms.buybooksindia.com/uploads/books/9789391165482_0_1644051516.jpeg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Atomic Habits</h4>
+                                                <h5 class="price-text-color">$3.75</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://cms.buybooksindia.com/uploads/books/9781847941831_0_1606296941.jpeg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">War Of Lanka</h4>
+                                                <h5 class="price-text-color">$7.17</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://cms.buybooksindia.com/uploads/books/9789356291522_0_1658812036.jpeg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Tomb Of Sand</h4>
+                                                <h5 class="price-text-color">$19.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://cms.buybooksindia.com/uploads/books/9780143448471_0_1654006622.jpeg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Ikigai</h4>
+                                                <h5 class="price-text-color">$1.99</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://cms.buybooksindia.com/uploads/books/9781786330895_0_1607507418.jpeg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h4 class="card-title">Blue Lock</h4>
+                                                <h5 class="price-text-color">$1.09</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="https://m.media-amazon.com/images/I/81IaaerXoJL._AC_UY327_FMwebp_QL65_.jpg"
+                                            class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="#">Add to
+                                                    cart</a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="#">More details</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <a href="contact_us.html" class="text-white">Contact Us </a>
+
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <a href="about.html" class="text-white">About Us</a>
+
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <a href="request.html" class="text-white">Request a book</a>
+
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <a href="sellbook.html" class="text-white">Sell a book</a>
+
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);font-size: 15px;">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">royalbookstore.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+</body>
+
+</html>

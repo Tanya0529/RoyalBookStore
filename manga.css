@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Merriweather:wght@900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.col-md-9 h3{
+   
+  font-family: 'Heebo', sans-serif;
+    font-size: 36px;
+    margin: 20px 0px;
+      
+    margin-right: 44rem;
+    width: 25rem;
+  
+
+  
+}
+
+
+footer{
+    margin-top: 10px;
+}
+
+.mb-4 p{
+  font-size: 16px;
+}
+
+.pt-2 {
+  font-size: 15px;
+}
+
+.form-label{
+  font-size: 15px;
+}
+
+.text-white a{
+  font-size: 17px;
+}
+
+.fade:not(.show) {
+    opacity: 2;
+  }
+
+@media screen and (max-width: 1000px) {
+    .col-md-9 h3 {
+        font-size: 29px;
+        margin: 12px 0px;
+      }
+}  
+
+@media screen and (max-width: 992px) {
+    .col-sm-3 {
+        width: 43%;
+        margin: 8px auto;
+      }
+    .btn-add{
+      display:block;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-9 h3 {
+    font-size: 26px;
+    margin: 32px -15px -8px -35px;
+    }
+  .controls {
+      margin-top: 5px;
+    } 
+  .col-sm-3{
+    width: 50%;
+margin: 8px 0px;
+  }   
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .col-md-9 {
+   
+    margin: 12px 7px;
+    }
+}
+
+@media screen and (max-width: 522px) {
+  .col-sm-3 {
+     width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+  .col-sm-3 {
+     width: 50%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .col-sm-3 {
+      width: 49%;
+      margin: 8px 1px;
+      }
+}
+
+@media screen and (max-width: 378px) {
+    .col-sm-3 {
+       width: 54%;
+       margin:8px -8px ;
+      }
+}
+
+@media screen and (max-width: 360px) {
+    .col-item .price h4 {
+        width: 14rem;
+        margin-left: 13px;
+      }
+      .price-text-color {
+        margin-left: 12px;
+      }  
+}
+
+
+@media screen and (max-width: 363px) {
+    .col-sm-3 {
+        width: 100%;
+        margin: 8px 0px;
+      }
+}
+
+
